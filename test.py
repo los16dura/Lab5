@@ -49,23 +49,45 @@ A = [1, 3, 2, 32,32]
 # print(A[max_i])
 
 
-#3
-k = 0
-for i in range(len(A)):
-    if k >= len(A):
-        break
-    #print('k=',k)
-    print(A[i],end=' ')
-    k=k+1
-    if k >= len(A):
-        break
-
-    print(A[len(A)-i-1],end=' ')
-    k = k + 1
+# #3
+# k = 0
+# for i in range(len(A)):
+#     if k >= len(A):
+#         break
+#     #print('k=',k)
+#     print(A[i],end=' ')
+#     k=k+1
+#     if k >= len(A):
+#         break
+#
+#     print(A[len(A)-i-1],end=' ')
+#     k = k + 1
 
 
 
 #4
+# A = [1,2,3,4,2]
+#
+# i = 0
+# t = int(input())
+# for i in range(t):
+#     s = A.pop()
+#     A.insert(len(A)-s,s)
+#     print(A)
+#
 
 
+#5
 
+k=(int (input() ))
+n=(int (input() ))
+#A[n+1]
+for i in range (0, n):
+    A[i]=0
+for i in range (0,k-1):
+    A[i]=1 #заполнил единцами первые K элементов с нулевого до k-1
+for i in range (k, n):
+    for j in range (i-1, i-k, -1):
+        A[i]=A[i]+A[j]
+print(A[n])
+print(A)
