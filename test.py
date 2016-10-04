@@ -138,19 +138,61 @@
 # #print(f)
 # t = int(f)
 # print('His or her mark is ', t)
+#
+# #8-ой,ваще изи
+# A=[]
+# B=[]
+# N = int(input())
+# for i in range(N)
+#     A[i] = int(input())
+#     B[i] = int(input())
+# T = int(input())
+# for i in range(N):
+#     if T>=A[i]and T<=B[i]:
+#         k = k + 1
+# print(k)
+# #9
+# A=[0]*100
+# N = int(input())
+# for i in range(N):
+#     A[i] = int(input())
+# k = int(input())
+# max = sum(A[0:k])
+# for i in range(N):
+#     if max<(max-A[i]+A[i+k]):
+#         max=max-A[i]+A[i+k]
+#         print('max=',max)
+# print(max)
 
-#8-ой,ваще изи
-A=[]
-B=[]
+#10 што та ни работает
+a = [[0] * 20]*20
 N = int(input())
-for i in range(N)
-    A[i] = int(input())
-    B[i] = int(input())
-T = int(input())
-for i in range(N):
-    if T>=A[i]and T<=B[i]:
-        k = k + 1
-print(k)
+a[0][0] = 1
+a[1][0] = 1
+a[1][1] = 1
+for i in range (2,N):
+    a[i][0]=1
+    for j in range (0,i+1):
+       if j==i:
+            a[i][j]=1
+       else:
+            a[i][j]=a[i-1][j-1]+a[i-1][j]
+if N<10:
+    k=4
+else:
+    k=5
+for i in range(0,N):
+    print((N-i+1+((k // 2)-1)*(N-i)))
+    for j in range(0,i):
+     print(a[i][j],k)
+
+#10попытка номер два
+
+
+
+
+
+
 
 
 
