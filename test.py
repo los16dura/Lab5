@@ -121,20 +121,36 @@
 # print(me)
 # #ой в этой задаче я заыла ,что длина массива вводится,но без разницы же?
 #7-норм задача,жаль,что это последняя,что я успела
-m = 0
-A = [0,0,0,0,0,0,0,0,0,0]
-s = 0
-for i in range(10):
-    A[i]=int(input())
-    if i>=1:
-        if A[i-1] == 2 and A[i] != 2 :
-                 s=s-2
-                 m=m-1
-    s=s+A[i]
-    #print(s)
-    m=m+1
-    #print(m)
-f = s/m
-#print(f)
-t = int(f)
-print('His or her mark is ', t)
+# m = 0
+# A = [0,0,0,0,0,0,0,0,0,0]
+# s = 0
+# for i in range(10):
+#     A[i]=int(input())
+#     if i>=1:
+#         if A[i-1] == 2 and A[i] != 2 :
+#                  s=s-2
+#                  m=m-1
+#     s=s+A[i]
+#     #print(s)
+#     m=m+1
+#     #print(m)
+# f = s/m
+# #print(f)
+# t = int(f)
+# print('His or her mark is ', t)
+
+#8-ой,ваще изи
+A=[]
+B=[]
+N = int(input())
+for i in range(N)
+    A[i] = int(input())
+    B[i] = int(input())
+T = int(input())
+for i in range(N):
+    if T>=A[i]and T<=B[i]:
+        k = k + 1
+print(k)
+
+
+
