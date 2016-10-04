@@ -4,7 +4,7 @@ i = 0
 #2-1
 while i < (len(A)-1):
     A[i], A[i + 1] = A[i + 1], A[i]
-    i+=2
+    i += 2
 print(A)
 
 
@@ -27,7 +27,7 @@ print()
 
 A = [1, 3, 2, 32,32]
 #2-4
-max=1
+max = 1
 max_i=1
 for i in range(len(A)):
     if A.count(A[i])> max:
